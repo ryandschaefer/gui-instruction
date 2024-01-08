@@ -1,4 +1,6 @@
-For Homework #1, you will be creating a webpage about YOU!  While this
+# Assignment 1
+
+For this assignment, you will be creating a webpage about YOU!  While this
 assignment is intentionally open to interpretation, all submissions need
 to include the following content:
 
