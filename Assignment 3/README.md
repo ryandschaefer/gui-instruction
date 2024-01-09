@@ -65,31 +65,53 @@ npm install axios --save
 # Acceptance Criteria
 
 <ul>
-    <li>Given a product...
+	<li>Given initial visit to the site
 		<ul>
-			<li>product details (name, image, description and price) are loaded from the API and displayed with list of reviews and a form to add a review.</li>
-			<li>when no reviews exist...
+			<li>user is shown a list of products</li>
+		</ul>
+	</li>
+	<li>Given the list of products
+		<ul>
+			<li>when "Product Details" is clicked
 				<ul>
-					<li>the "Be the first to review" message is shown.</li>
-					<li>review count shows 0.</li>
+					<li>user is redirected to the product details</li>
 				</ul>
 			</li>
-			<li>when one or more reviews exist...
+			<li>when "Add to Cart" is clicked"
 				<ul>
-					<li>each review is shown in the list with rating, user name, date and comment,</li>
-					<li>correct review count is shown,</li>
-					<li>"Be the first to review" message is hidden.</li>
+					<li>the product is added to the cart</li>
+					<li>user is redirected to their cart</li>
 				</ul>
 			</li>
-			<li>when user selects a rating from the rating drop-down...
+		</ul>
+	</li>
+	<li>Given a product detail
+		<ul>
+			<li>the correct product is loaded based on the id in the URL&nbsp;</li>
+			<li>when a review is added
 				<ul>
-					<li>the selected rating is shown in stars next to the filed.</li>
+					<li>the review is permanently saved</li>
 				</ul>
 			</li>
-			<li>when user enters review and clicks submit...
+			<li>when "Add to Cart" is clicked
 				<ul>
-					<li>the new review is shown in the list.</li>
-					<li>the form is cleared.</li>
+					<li>the product is added to the cart</li>
+					<li>user is redirected to their cart&nbsp;</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>Given the user's cart<br />
+		<ul>
+			<li>each item in cart is displayed with quantity, product name, product price, and a line total</li>
+			<li>the total of all items in cart is displayed below item table</li>
+		</ul>
+	</li>
+	<li>Given any view of the store
+		<ul>
+			<li>when the site logo (name in header) is clicked
+				<ul>
+					<li>user is redirected back to the product list</li>
 				</ul>
 			</li>
 		</ul>

@@ -1,26 +1,21 @@
 # Assignment 3
 
-For this assignment, you will be adding new functionality to your
-Homework #3 project.
+For this assignment, you will be adding new functionality to Assignment 3.
 
--   Routing
-
--   A product list and cart viewer
-
--   Shared context for handling the user\'s cart
-
--   Two additional API interactions (load products and save review)
+<ul>
+	<li>Routing</li>
+	<li>A product list and cart viewer</li>
+	<li>Shared context for handling the user's cart</li>
+	<li>Two additional API interactions (load products and save review)</li>
+</ul>
 
 **READ EVERYTHING BEFORE YOU START**
 
-Watch this video for demonstration\...
+Watch this [video](https://nimb.ws/43RpHD) for demonstration...
 
-[[https://nimb.ws/43RpHD]{.underline} (Links to an external
-site.)](https://nimb.ws/43RpHD)
+# Requirements
 
-Requirements
-
-**Acceptance Criteria**
+## Acceptance Criteria
 
 -   Given initial visit to the site
 
