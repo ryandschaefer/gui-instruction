@@ -1,4 +1,4 @@
-# Graphical User Interfaces (GUI) With React
+# Graphical User Interfaces With React
 
 ## Tentative Schedule
 
