@@ -1,24 +1,16 @@
 # Assignment 3
 
-For this assignment, you will be creating a product review page with
-React that dynamically displays product information loaded from an API,
-a list of reviews, and a form to add a new review (as shown above).
+For this assignment, you will be creating a product review page with React that dynamically displays product information loaded from an API, a list of reviews, and a form to add a new review (as shown above).
 
-Watch this [video](https://johnlawrimore.com/smu/hw3/hw3_video.webm) for
-demonstration.
+Watch this [video](https://johnlawrimore.com/smu/hw3/hw3_video.webm) for demonstration.
 
-**As always, I recommend reading all assignment instructions before
-getting started. **Make sure to follow the instructions carefully.
-Points will be deducted for variations from what is outlined below.
+**As always, I recommend reading all assignment instructions before getting started.** Make sure to follow the instructions carefully. Points will be deducted for variations from what is outlined below.
 
-For implementation, you will want to rely heavily on the recent examples
-completed in class that have been posted in Canvas, along with the
-associated lectures. Unless otherwise stated here, everything you need
-for this assignment can be found there.
+For implementation, you will want to rely heavily on the examples, along with the associated lectures. Unless otherwise stated here, everything you need for this assignment can be found there.
 
-[Getting started]{.underline}
+# Getting Started
 
-Setup
+## Setup
 
 You will want to begin by starting a new project using
 the** create-react-app **tool called \"store\".
@@ -31,55 +23,45 @@ Don\'t forget to remove unneeded content from the boilerplate.
 
 -   Get rid of logo.svg and its import statement
 
-Styling
+## Styling
 
-For styling on this assignment, you will need to install Bootstrap.
+For styling on this assignment, you will need to install Material UI (MUI) and/or Bootstrap.
 
-+-----------------------------------------------------------------------+
-| **  npm install \@popperjs/core \--save **                            |
-|                                                                       |
-| **  npm install bootstrap \--save**                                   |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+MUI: **npm install bootstrap @popperjs/core --save**
+Bootstrap: **npm install @mui/material @emotion/react @emotion/styled --save**
 
-Inside your index.js, you will need to add these imports\...
+Inside your index.js, you will need to add these imports to use Bootstrap...
 
-import \'bootstrap\';
+**import \'bootstrap\';**
+**import \'bootstrap/dist/css/bootstrap.min.css\';**
 
-import \'bootstrap/dist/css/bootstrap.min.css\';
+If you use any MUI components, you will import them in the same file in which they are used.
 
-Reference
-Bootstrap\'s [[website]{.underline}](https://getbootstrap.com/) for
-duplicating the styles shown in screenshot and video. 
+Reference [MUI's website](https://mui.com/material-ui/getting-started/) or [Bootstrap's website](https://getbootstrap.com/) for duplicating the styles shown in screenshot and video. 
 
-You should need little to no CSS for this assignment beyond Bootstrap
-(other than the CSS provided for you below).
+You should need little to no CSS for this assignment beyond Bootstrap (other than the CSS provided for you below).
 
-API Interaction
+## API Interaction
 
 For API interaction, you will need to install Axios.
 
-  -----------------------------------------------------------------------
-  **  npm install axios \--save**
-  -----------------------------------------------------------------------
+**npm install axios --save**
 
-  -----------------------------------------------------------------------
+# Acceptance Criteria
 
-[Acceptance Criteria]{.underline}
-
--   Given a product\...
+-   Given a product...
 
     -   product details (name, image, description and price) are loaded
         > from the API and displayed with list of reviews and a form to
         > add a review.
 
-    -   when no reviews exist\...
+    -   when no reviews exist...
 
         -   the \"Be the first to review\" message is shown.
 
         -   review count shows 0.
 
-    -   when one or more reviews exist\...
+    -   when one or more reviews exist...
 
         -   each review is shown in the list with rating, user name,
             > date and comment,
@@ -88,37 +70,33 @@ For API interaction, you will need to install Axios.
 
         -   \"Be the first to review\" message is hidden.
 
-    -   when user selects a rating from the rating drop-down\...
+    -   when user selects a rating from the rating drop-down...
 
         -   the selected rating is shown in stars next to the filed.
 
-    -   when user enters review and clicks submit\...
+    -   when user enters review and clicks submit...
 
         -   the new review is shown in the list.
 
         -   the form is cleared.
 
-[Implementation]{.underline}
+# Implementation
 
-File Structure
+## File Structure
 
 Do not deviate from the following file structure. Remember to use the
 .**jsx** file extension for all components and leverage barrel files for
 module loading.
 
-![A screenshot of a computer Description automatically
-generated](vertopal_9fb51c6290c742dcacab694cc6523152/media/image1.png){width="5.572222222222222in"
-height="9.0in"}
+![A screenshot of a computer Description automatically generated](images/image1.png){width="5.572222222222222in" height="9.0in"}
 
- 
-
-Models
+## Models
 
 For this assignment, you will be working with two models. While we will
 not be instantiating either as part of this assignment, its always a
 good idea to define your Data Transfer Objects (DTOs).
 
-***[Product]{.underline}***
+### Product
 
 -   id
 
@@ -132,7 +110,7 @@ good idea to define your Data Transfer Objects (DTOs).
 
 -   reviews
 
-***[ProductReview]{.underline}***
+### ProductReview
 
 -   userName
 
@@ -142,9 +120,9 @@ good idea to define your Data Transfer Objects (DTOs).
 
 -   date
 
-API
+## API
 
-***[productsApi]{.underline}***
+### productsApi
 
 productsApi.js will contain functions that perform CRUD operations
 against an API. For this, you will need to import Axios into this file.
@@ -183,13 +161,13 @@ Build out the following function:
 
 We will be adding more functions here in the next assignment.
 
-Components
+## Components
 
 For HW3, your store will have the following components in addition to
 the App component.** **All components must be function components and
 must be in their own file.
 
-***[productDetails]{.underline}***
+### productDetails
 
 +----------+-----------------------------------------------------------+
 | *        | Displays product details of a product loaded from the API |
@@ -244,7 +222,7 @@ must be in their own file.
 |          |     > next assignment.                                    |
 +----------+-----------------------------------------------------------+
 
-***[reviewList]{.underline}***
+### reviewList
 
 +----------+-----------------------------------------------------------+
 | *        | Displays a list of user reviews                           |
@@ -292,7 +270,7 @@ must be in their own file.
 |          |     > someCondition && \<Element /\> } convention.        |
 +----------+-----------------------------------------------------------+
 
-***[reviewForm]{.underline}***
+### reviewForm
 
 +----------+-----------------------------------------------------------+
 | *        | Form for leaving a new user review                        |
@@ -348,7 +326,7 @@ must be in their own file.
 |          |     > \]                                                  |
 +----------+-----------------------------------------------------------+
 
-***[rating]{.underline}***
+### rating
 
 +----------+-----------------------------------------------------------+
 | *        | Depicts a rating value in the form of stars (1-5)         |
@@ -369,8 +347,7 @@ must be in their own file.
 +----------+-----------------------------------------------------------+
 | **Co     | ![A math equation with red and blue text Description      |
 | ntents** | automatically                                             |
-|          | generated](vertopal_9fb51c6                               |
-|          | 290c742dcacab694cc6523152/media/image2.png){width="6.5in" |
+|          | generated](images/image2.png){width="6.5in" |
 |          | height="0.8972222222222223in"}                            |
 |          |                                                           |
 |          | *(the plus sign ensures that value is evaluated as a      |
@@ -378,15 +355,14 @@ must be in their own file.
 +----------+-----------------------------------------------------------+
 | **CSS**  | ![A screen shot of a computer code Description            |
 |          | automatically                                             |
-|          | generated](vertopal_9fb51c6290c742dcacab6                 |
-|          | 94cc6523152/media/image3.png){width="5.065277777777778in" |
+|          | generated](images/image3.png){width="5.065277777777778in" |
 |          | height="4.740277777777778in"}                             |
 +----------+-----------------------------------------------------------+
 | *        | -   Note that Rating has a jsx and css. Don\'t forget to  |
 | *Notes** |     > import your CSS at the top of your jsx file         |
 +----------+-----------------------------------------------------------+
 
-***[textField]{.underline}***
+### textField
 
 +----------+-----------------------------------------------------------+
 | *        | Depicts a text input with label                           |
@@ -412,7 +388,7 @@ must be in their own file.
 | *Notes** |                                                           |
 +----------+-----------------------------------------------------------+
 
-***[selectField]{.underline}***
+### selectField
 
 +----------+-----------------------------------------------------------+
 | *        | Depicts a select with label                               |
@@ -444,7 +420,7 @@ must be in their own file.
 | *Notes** |                                                           |
 +----------+-----------------------------------------------------------+
 
-***[textAreaField]{.underline}***
+### textAreaField
 
 +----------+-----------------------------------------------------------+
 | *        | Depicts a text area with label                            |
@@ -478,6 +454,4 @@ General Hints
 
 -   Leverage the React Developer Tools (Component Tab)
 
-![A jar of peanut butter Description automatically
-generated](vertopal_9fb51c6290c742dcacab694cc6523152/media/image4.png){width="6.246527777777778in"
-height="6.246527777777778in"}
+![A jar of peanut butter](images/image4.png){width="6.246527777777778in"height="6.246527777777778in"}

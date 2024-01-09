@@ -1,8 +1,6 @@
 # Assignment 1
 
-For this assignment, you will be creating a webpage about YOU!  While this
-assignment is intentionally open to interpretation, all submissions need
-to include the following content:
+For this assignment, you will be creating a webpage about YOU!  While this assignment is intentionally open to interpretation, all submissions need to include the following content:
 
 -   a paragraph introduction
 
@@ -14,9 +12,7 @@ to include the following content:
 
 -   a form to contact you (it does NOT need to actually work)
 
-In general, I am looking for you to be creative and make a good effort
-to explore the many features of HTML and CSS. At minimal, however, your
-assignment needs to meet the following requirements:
+In general, I am looking for you to be creative and make a good effort to explore the many features of HTML and CSS. At minimal, however, your assignment needs to meet the following requirements:
 
 -   Find ways to make use of the following tags:
 
@@ -42,8 +38,7 @@ assignment needs to meet the following requirements:
 
     -   \<a\>
 
-    -   \<input\>, \<select\> or \<textarea\> *(don't forget your form
-        > tag and labels!)*
+    -   \<input\>, \<select\> or \<textarea\> *(don't forget your form tag and labels!)*
 
     -   \<button\>
 
@@ -101,6 +96,4 @@ assignment needs to meet the following requirements:
 
 -   All styles must be in a CSS file
 
-I will not be grading on aesthetics, but I do expect to see effort. That
-may mean doing more than just the minimal requirements. Styles, for
-example, should be used in ways that make sense. Be creative!
+I will not be grading on aesthetics, but I do expect to see effort. That may mean doing more than just the minimal requirements. Styles, for example, should be used in ways that make sense. Be creative!
