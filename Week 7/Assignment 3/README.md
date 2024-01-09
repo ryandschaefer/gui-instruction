@@ -2,7 +2,7 @@
 
 For this assignment, you will be creating a product review page with React that dynamically displays product information loaded from an API, a list of reviews, and a form to add a new review (as shown above).
 
-Watch this [video](https://johnlawrimore.com/smu/hw3/hw3_video.webm) for demonstration.
+Watch this [video](https://drive.google.com/file/d/1lHfOXTq9829QMv-WA6oyEVw7BVBpZk72/view?usp=sharing) for demonstration.
 
 **As always, I recommend reading all assignment instructions before getting started.** Make sure to follow the instructions carefully. Points will be deducted for variations from what is outlined below.
 
@@ -178,7 +178,7 @@ We will be adding more functions here in the next assignment.
 
 For this assignment, your store will have the following components in addition to the App component. **All components must be function components and must be in their own file.**
 
-### productDetails
+### ProductDetails
 
 | | |
 |---|---|
@@ -190,7 +190,7 @@ For this assignment, your store will have the following components in addition t
 | **Contents** | <ul><li>Navigation bar with static breadcrumb (this does not need to work)</li><li>Bound elements to display the product details (presented in jumbotron)<ul><li>Product image (shown to left of text)</li><li>Name</li><li>Price (show in badge)</li><li>Description</li></ul></li><li>reviewList component</li><li>reviewForm component</li></ul> |
 | **Notes** | <ul><li>You will need to bind the src attribute of the image to product.imageUrl</li><li>You will need a method to handle when a new review is added by reviewForm. This method will clone product,&nbsp;add the productReview that was passed in to product.reviews, and&nbsp;call product's setter with the clone.</li><li>When you reload your page, any reviews you added will disappear. This is expected since we are not saving them back to the API. This will be addressed in the next assignment.</li></ul> |
 
-### reviewList
+### ReviewList
 
 | | |
 |---|---|
@@ -202,7 +202,7 @@ For this assignment, your store will have the following components in addition t
 | **Contents** | <ul><li>"Product Reviews" header with review count in parenthesis</li><li>"Be the first to add a review!" message shown ONLY when there are no reviews</li><li>Card for EACH review in reviews<ul><li>Header with rating component</li><li>User name</li><li>Date (displayed to far right of User name)</li><li>Comment</li></ul></li></ul> |
 | **Notes** | <ul><li>Don't forget the key attribute on your repeating element. Since we have not assigned an id to productReview (this will happen in the next assignment), you will need to use index as your key. We did an example of this in class.</li><li>Don't forget your logic to display the "Be the first to Review" message when no reviews exist on the product (product.reviews.length === 0). To dynamically show or hide an element, use the { someCondition &amp;&amp; &lt;Element /&gt; } convention.</li></ul> |
 
-### reviewForm
+### ReviewForm
 
 | | |
 |---|---|
@@ -214,7 +214,7 @@ For this assignment, your store will have the following components in addition t
 | **Contents** | <ul><li>"Add Review" header</li><li>Form fields for leaving review<ul><li>Your name (textField component)</li><li>Rating (select component with rating component next to it bound)</li><li>Comment (textArea component)</li></ul></li><li>Submit button</li></ul> |
 | **Notes** | <ul><li>Don't forget your button's type attribute!</li><li>When submit is clicked, invoke onReviewAdded with { userName, rating, comment, date: new Date().toDateString() } and clear the form</li><li>ratingOptions is needed to bind the options prop on your SelectField. It can be initialized with the following array.<br />[<br />&nbsp; &nbsp; &nbsp;{ value: 1, label: '1 stars' },<br />&nbsp; &nbsp; &nbsp;{ value: 2, label: '2 stars' },<br />&nbsp; &nbsp; &nbsp;{ value: 3, label: '3 stars' },<br />&nbsp; &nbsp; &nbsp;{ value: 4, label: '4 stars' },<br />&nbsp; &nbsp; &nbsp;{ value: 5, label: '5 stars' }<br />]&nbsp;</li></ul> |
 
-### rating
+### Rating
 
 | | |
 |---|---|
@@ -227,7 +227,7 @@ For this assignment, your store will have the following components in addition t
 | **CSS** | ![CSS code](images/image4.png) |
 | **Notes** | Note that Rating has a jsx and css. Don't forget to import your CSS at the top of your jsx file |
 
-### textField
+### TextField
 
 | | |
 |---|---|
@@ -238,7 +238,7 @@ For this assignment, your store will have the following components in addition t
 | **Effects** | None |
 | **Notes** | This can be borrowed from the code example |
 
-### selectField
+### SelectField
 
 | | |
 |---|---|
@@ -249,7 +249,7 @@ For this assignment, your store will have the following components in addition t
 | **Effects** | None |
 | **Notes** | This can be borrowed from the code example |
 
-### textAreaField
+### TextAreaField
 
 | | |
 |---|---|

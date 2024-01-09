@@ -11,7 +11,7 @@ For this assignment, you will be adding new functionality to Assignment 3.
 
 **READ EVERYTHING BEFORE YOU START**
 
-Watch this [video](https://nimb.ws/43RpHD) for demonstration...
+Watch this [video](https://drive.google.com/file/d/1kgcMOHwjB6rt-CRmMwxusoH3TaAJeM4U/view?usp=sharing) for demonstration...
 
 # Requirements
 
@@ -248,6 +248,10 @@ const _product = {...product};
 _product.reviews.push(x);
 setProduct(_product);
 ```
+
+### Other
+
+Replace all form fields (TextField, SelectField, TextAreaField) with their MUI equivalents.
 
 ## Styling
 
