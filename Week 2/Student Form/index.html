@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Students</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Student</th>
+          <th>Dept</th>
+          <th>Class</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jill</td>
+          <td>CS</td>
+          <td>3345</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>CS</td>
+          <td>3330</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>CS</td>
+          <td>3310</td>
+          <td>C</td>
+        </tr>
+      </tbody>
+    </table>
+    <form>
+      <div class="form-field required">
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" name="studentName" />
+      </div>
+      <div class="form-field">
+        <label for="department">Department</label>
+        <select type="text" id="department" name="department">
+          <option></option>
+          <option>Computer Science</option>
+          <option>Engineering</option>
+          <option>Data Science</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Grade</label>
+        <div class="radio">
+          <label> <input type="radio" id="grade_A" name="grade" />A</label>
+          <label> <input type="radio" id="grade_B" name="grade" />B</label>
+          <label> <input type="radio" id="grade_C" name="grade" />C</label>
+        </div>
+      </div>
+      <button type="button">Submit</button>
+    </form>
+  </body>
+</html>

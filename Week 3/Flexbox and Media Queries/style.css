@@ -1,0 +1,58 @@
+img {
+	max-width: 100%;
+}
+
+body {
+	border: solid 3px red;
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+}
+
+nav {
+	background: lightblue;
+}
+
+main {
+	border: dotted 3px orange;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	flex-grow: 1;
+}
+
+header, footer {
+	background: lightgreen;
+}
+
+section {
+	border: dashed 3px blue;
+	display: flex;
+	flex-grow: 1;
+}
+
+article {
+	flex-grow: 1;
+}
+
+aside {
+	background: pink;
+}
+
+@media (max-width: 575px) {
+	nav, footer, aside {
+		display: none;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
+	nav, footer {
+		display: none;
+	}
+}
+
+@media (orientation: portrait) {
+	main {
+		flex-direction: row;
+	}
+} 

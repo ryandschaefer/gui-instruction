@@ -1,0 +1,16 @@
+main > :not(.active) {
+    display: none;
+}
+
+#productList_products li {
+    cursor: pointer;
+    clear: both;
+}
+
+#productList_products li:hover {
+    text-decoration: underline;
+}
+
+#productList_products span {
+    float: right;
+}
