@@ -8,6 +8,8 @@ Watch this [video](https://johnlawrimore.com/smu/hw3/hw3_video.webm) for demon
 
 For implementation, you will want to rely heavily on the examples, along with the associated lectures. Unless otherwise stated here, everything you need for this assignment can be found there.
 
+![Final product home page](images/image1.png)
+
 # Getting Started
 
 ## Setup
@@ -88,7 +90,7 @@ Do not deviate from the following file structure. Remember to use the
 .**jsx** file extension for all components and leverage barrel files for
 module loading.
 
-![A screenshot of a computer Description automatically generated](images/image1.png){width="5.572222222222222in" height="9.0in"}
+![File structure](images/image2.png)
 
 ## Models
 
@@ -129,15 +131,11 @@ against an API. For this, you will need to import Axios into this file.
 
 Define the following constants. They should not be exported.
 
-+---------------+------------------------------------------------------+
-| **Constant    | **Value**                                            |
-| Name**        |                                                      |
-+===============+======================================================+
-| baseEndpoint  | [[https://api.johnlawrimore.com/store/productsLinks  |
-|               | to an external                                       |
-|               | site.]{.under                                        |
-|               | line}](https://api.johnlawrimore.com/store/products) |
-+---------------+------------------------------------------------------+
+|-------------------|--------------------------------------------------|
+| **Constant Name** | **Value**                                        |
+|-------------------|--------------------------------------------------|
+| baseEndpoint  | [https://api.johnlawrimore.com/store/products](https://api.johnlawrimore.com/store/products) |
+|---------------|------------------------------------------------------|
 | headers       | {\                                                   |
 |               |      \"Authorization\" : \"xxx\"\                    |
 |               | }                                                    |
@@ -146,7 +144,7 @@ Define the following constants. They should not be exported.
 |               | and last name as it is listed in canvas. If your     |
 |               | name does not match, you will not receive data back  |
 |               | from the API!                                        |
-+---------------+------------------------------------------------------+
+|---------------|------------------------------------------------------|
 
 Build out the following function:
 
@@ -345,18 +343,12 @@ must be in their own file.
 | **E      | None                                                      |
 | ffects** |                                                           |
 +----------+-----------------------------------------------------------+
-| **Co     | ![A math equation with red and blue text Description      |
-| ntents** | automatically                                             |
-|          | generated](images/image2.png){width="6.5in" |
-|          | height="0.8972222222222223in"}                            |
+| **Co     | ![Some code](images/image3.png)                          |
 |          |                                                           |
 |          | *(the plus sign ensures that value is evaluated as a      |
 |          | number)*                                                  |
 +----------+-----------------------------------------------------------+
-| **CSS**  | ![A screen shot of a computer code Description            |
-|          | automatically                                             |
-|          | generated](images/image3.png){width="5.065277777777778in" |
-|          | height="4.740277777777778in"}                             |
+| **CSS**  | ![Some code](images/image4.png)                           |
 +----------+-----------------------------------------------------------+
 | *        | -   Note that Rating has a jsx and css. Don\'t forget to  |
 | *Notes** |     > import your CSS at the top of your jsx file         |
@@ -454,4 +446,4 @@ General Hints
 
 -   Leverage the React Developer Tools (Component Tab)
 
-![A jar of peanut butter](images/image4.png){width="6.246527777777778in"height="6.246527777777778in"}
+![A jar of peanut butter](images/image5.png)
