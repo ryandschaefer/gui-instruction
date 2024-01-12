@@ -5,7 +5,6 @@
 ### Week 1 (January 15)
 
 - Introduction
-- Administrative tasks
 - Install dependencies
 
 ### Week 2 (January 22)
