@@ -76,6 +76,16 @@ pip install -r requirements.txt
 Rscript requirements.R
 ```
 
+### SMU VPN
+
+The backend of the app will not run unless you are either on SMU campus or are connected to the VPN. To install the VPN, follow the steps in the link below:
+
+https://www.smu.edu/oit/services/vpn
+
+### Backend Environment
+
+To configure the backend environment, create a file in the ```backend``` folder called ```.env```. Reach out to me once you have reached this step, and I will tell you what to put in this file. This file contains security information that I do not want to post on a public GitHub repository.
+
 ## Run the App
 
 Use one of the following methods to run the app. The instructions assume you are starting in the root folder.
