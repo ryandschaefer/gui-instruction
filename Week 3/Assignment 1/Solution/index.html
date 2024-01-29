@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Ryan Schaefer</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <header>
+            <h1>About Ryan Schaefer</h1>  
+        </header>
+        <main>  
+            <section>
+                <article>
+                    <h2>Introduction</h2>
+                    <img src = "src/profile-cropped.jpg" id = "profilePic"> 
+                    <p>
+                        Hello! My name is Ryan Schaefer and I am a junior at 
+                        Southern Methodist University! I am a computer science, 
+                        statistical science, and data science triple major. I work 
+                        as a tutor at the A-LEC and as a research intern for the history
+                        department building statistical functions in C++ and R.
+                    </p>
+                </article>
+            </section>
+            <section>
+                <h2>My Interests</h2>
+                <article> 
+                    <ul>
+                        <li> 
+                            Watching soccer
+                            <ul>
+                                <li>My favorite team is <a href = "https://www.whufc.com/">West Ham United</a> (see logo to the right)</li>
+                                <li>I also enjoy soccer based games such as Fifa and Football Manager</li>
+                            </ul>
+                        </li>
+                        <li>Watching movies, TV shows, and YouTube</li>
+                        <li>Data Science</li>
+                        <li>Tutoring at the A-LEC</li>
+                        <li>Honing my programming skills with side projects</li>
+                    </ul>
+                    <img src = "src/WestHam.png"> 
+                </article>
+            </section>
+            <section class = "clear">
+                <h2>My Courses</h2>
+                <div id = "tableWrapper">
+                    <table>
+                        <thead>  
+                            <tr>
+                                <th>Department</th> 
+                                <th>Course Number</th>
+                                <th>Course Name</th>
+                                <th>Professor</th>
+                                <th>Day(s)</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CS</td>
+                                <td>3345</td>
+                                <td>Graphical User Interfaces</td>
+                                <td>Lawrimore</td>
+                                <td>M</td>
+                                <td>6:30-9:20</td>
+                            </tr>
+                            <tr>
+                                <td>CS</td>
+                                <td>3377</td>
+                                <td>Ethical Issues in Computing</td>
+                                <td>McBride</td>
+                                <td>Tu/Th</td>
+                                <td>3:30-4:50</td>
+                            </tr>
+                            <tr>
+                                <td>DS</td>
+                                <td>1300</td>
+                                <td>Intro to Data Science</td>
+                                <td>Moon</td>
+                                <td>Tu/Th</td>
+                                <td>11-12:20</td>
+                            </tr>
+                            <tr>
+                                <td>STAT</td>
+                                <td>3312</td>
+                                <td>Categorical Data Analysis</td>
+                                <td>Julander</td>
+                                <td>M/W/F</td>
+                                <td>9-9:50</td>
+                            </tr>
+                            <tr>
+                                <td>STAT</td>
+                                <td>4385</td>
+                                <td>Nonparametric Statistics</td>
+                                <td>McGee</td>
+                                <td>Tu/Th</td>
+                                <td>9:30-10:50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2>Contact Me!</h2>
+            <form name = "contact" id = "contact">
+                <div class = "required"> 
+                    <label for = "name">Your Name</label>
+                    <input type = "text" id = "name" name = "name" required/>
+                </div>
+                <div> 
+                    <label for = "email">Your Email</label>
+                    <input type = "email" id = "email" name = "email"/>
+                </div>
+                <div>
+                    <label for = "reason">Reason For Contacting Me</label>
+                    <select type = "text" id = "resaon" name = "reason">
+                        <option></option>
+                        <option>School</option>
+                        <option>Personal</option>
+                        <option>Other</option>
+                    </select> 
+                </div>
+                <div class = "required">  
+                    <label for = "message">Your Message</label>
+                    <textarea type = "text" id = "message" name = "message" required></textarea>
+                </div>
+                <button type = "button">Submit</button>
+            </form>  
+        </footer> 
+    </body>
+</html>       
