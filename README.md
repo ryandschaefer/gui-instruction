@@ -43,7 +43,7 @@
 - Lectures:
     - [Lecture 6: ES2015](https://app.mural.co/t/dialexa9735/m/dialexa9735/1664836498649/7084ea52a2ca124d5d21cd5416f901a920b69279?sender=6365d5b8-4f94-4bf2-8c6d-784533efd08b)
 - Examples:
-    - [JS Store Part 1](https://github.com/ryandschaefer/gui-instruction/tree/main/Week%205/JS%20Store%20Part%202)
+    - [JS Store Part 2](https://github.com/ryandschaefer/gui-instruction/tree/main/Week%205/JS%20Store%20Part%202)
 - Assignments:
     - [Assignment 2](https://github.com/ryandschaefer/gui-instruction/tree/main/Week%205/Assignment%202)
 
@@ -63,7 +63,7 @@
 - Lectures:
     - [Lecture 9: API Interaction](https://app.mural.co/t/dialexa9735/m/dialexa9735/1667238868415/dc85e9fc58e6502538750d8fb1d9c993992277a0?sender=005c8574-6308-47d4-af24-a0f016b51b99)
 - Examples:
-    - [Account Manager Part 1](https://github.com/ryandschaefer/gui-instruction/tree/main/Week%207/Account%20Manager%20Part%202)
+    - [Account Manager Part 2](https://github.com/ryandschaefer/gui-instruction/tree/main/Week%207/Account%20Manager%20Part%202)
 - Assignments:
     - [Assignment 3](https://github.com/ryandschaefer/gui-instruction/tree/main/Week%207/Assignment%203)
     
@@ -74,7 +74,7 @@
     - [Lecture 10: Routing](https://app.mural.co/t/dialexa9735/m/dialexa9735/1667861484621/bb7945f9ef216d98928c85dc58fa5cb348f4a38e?sender=ac8ed1f9-c3fa-4b28-9f8a-9fde7dfca0e7)
     - [Lecture 11: Advanced React Topics](https://app.mural.co/t/dialexa9735/m/dialexa9735/1668798895935/3320d2299d96a405d901685f2007af85bc29b9bc?sender=c8e6addf-37cf-43d7-8d9a-57e967f1cc3e)
 - Examples:
-    - [Account Manager Part 1](https://github.com/ryandschaefer/gui-instruction/tree/main/Week%208/Account%20Manager%20Part%203)
+    - [Account Manager Part 3](https://github.com/ryandschaefer/gui-instruction/tree/main/Week%208/Account%20Manager%20Part%203)
 - Assignments:
     - [Assignment 4](https://github.com/ryandschaefer/gui-instruction/tree/main/Week%208/Assignment%204)
 
