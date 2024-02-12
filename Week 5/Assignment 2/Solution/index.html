@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Recommended order for implementation: -->
+<!-- add rules to styles.css that hide all section tags under main not having a class of 'active' -->
+<!-- scheduler (js file) -->
+<!-- homeView (js file, html below & css) -->
+<!-- calendartView (js file, html below & css) -->
+<!-- appointmentView (js file, html below & css) -->
+
+<head>
+
+  <!-- Go out to https://fonts.google.com/ and follow instructions to use font 'Source Sans Pro'-->
+  <!-- You will need to add your reference to google's font api before your local stylesheet. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  
+  <link rel="stylesheet" href="style.css" />
+
+  <script>var app;</script>
+
+  <script src="scripts/viewer.js"></script>
+  <script src="scripts/scheduler.js"></script>
+  <script src="scripts/views/calendar.js"></script>
+  <script src="scripts/views/home.js"></script>
+  <script src="scripts/views/appointment.js"></script>
+</head>
+
+<body onload="app.homeView.load()">
+  <header>
+    <h1>Tutoring Center</h1>
+  </header>
+  <main>
+    <!-- Add css that sets main > section to display none, but main > section.active to display block -->
+    <section id="homeView">
+      <h2>Our Tutors</h2>
+      <!-- Add container for list of profile cards (to be bound from code) -->
+      <div id = "profileList">
+        <!-- and a template of a profile card (wrapped by a selectable template tag) inside container -->
+        <template>
+          <div class = "tutor">
+            <img src = "https://via.placeholder.com/150x150">
+            <div>
+              <h1></h1>
+              <p></p>
+            </div>
+            <button type = "button" class = "primary-button">View Schedule</button>
+          </div>
+        </template>
+      </div>
+    </section>
+    <section id="calendarView">
+      <!-- h2 to be bound from code -->
+      <h2></h2>
+      <p>Tutoring hours are Monday-Thursday from 5pm-7pm</p>
+      <!-- Table for displaying a tutur's schedule goes here -->
+      <table>
+        <thead>
+          <tr>
+            <td>Day</td>
+            <td>Availability</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- with a row in the tbody for each day (Monday-Thursday). -->
+            <!-- Give the second column of each row an id based on the day ("Monday", "Tuesday", etc.).  -->
+            <td>Monday</td>
+            <td id = "Monday"></td>
+          </tr>
+          <tr>
+            <!-- with a row in the tbody for each day (Monday-Thursday). -->
+            <!-- Give the second column of each row an id based on the day ("Monday", "Tuesday", etc.).  -->
+            <td>Tuesday</td>
+            <td id = "Tuesday"></td>
+          </tr>
+          <tr>
+            <!-- with a row in the tbody for each day (Monday-Thursday). -->
+            <!-- Give the second column of each row an id based on the day ("Monday", "Tuesday", etc.).  -->
+            <td>Wednesday</td>
+            <td id = "Wednesday"></td>
+          </tr>
+          <tr>
+            <!-- with a row in the tbody for each day (Monday-Thursday). -->
+            <!-- Give the second column of each row an id based on the day ("Monday", "Tuesday", etc.).  -->
+            <td>Thursday</td>
+            <td id = "Thursday"></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <!-- Button to return to list should call app.homeView.load() -->
+      <button type = "button" onclick = "app.homeView.load()" class = "secondary-button">Back to List</button>
+    </section>
+    <section id="appointmentView">
+      <h2>New Appointment</h2>
+      <!-- Form to collect name (input) and notes (textarea) goes here -->
+      <form>
+        <label for = "name">Name</label>
+        <input type = "text" name = "name" id = "name">
+        <label for = "notes">Notes</label>
+        <textarea name = "notes" id = "notes"></textarea>
+        <!-- Cancel button calls app.homeView.load() -->
+        <button type = "button" onclick = "app.homeView.load()" class = "secondary-button">Cancel</button>
+        <!-- Book button calls app.appointmentView.save() -->
+        <button type = "button" onclick = "app.appointmentView.save()" class = "primary-button">Book</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

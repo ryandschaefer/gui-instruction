@@ -1,0 +1,112 @@
+/* General */
+main > :not(.active) {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Source Sans Pro";
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    margin: 0;
+    padding-top: 3.5rem;
+}
+
+button {
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.primary-button {
+    background-color: darkseagreen;
+}
+
+.primary-button:hover {
+    background-color: seagreen;
+    color: white;
+}
+
+.secondary-button {
+    background-color: lightseagreen;
+}
+
+.secondary-button:hover {
+    background-color: blue;
+}
+
+/* Home */
+#profileList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: lightgrey;
+    border-radius: 1rem;
+    margin: 0 0.2rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.tutor {
+    border: solid black 0.1rem;
+    width: 40rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tutor div {
+    display: block;
+    position: absolute;
+    left: 150px;
+}
+
+.tutor button {
+    margin: auto;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+/* Calendar */
+#calendarView table {
+    width: 100%;
+}
+
+#calendarView thead {
+    background-color: black;
+    color: white;
+}
+
+.name, .notes {
+    display: block;
+}
+
+.notes {
+    color: grey;
+}
+
+/* Appointment */
+form * {
+    width: 100%;
+    display: block;
+}
+
+input, textarea, form button {
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
