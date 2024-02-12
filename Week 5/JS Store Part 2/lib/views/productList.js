@@ -1,23 +1,21 @@
-(function(store){
+(store => {
 
-    var loaded;
+    let loaded;
 
     store.productList = {
-        load: function() {
+        load () {
             if (!loaded) {
-                var products = store.inventory.getProducts();
-                var fragment = document.createDocumentFragment();
+                let products = store.inventory.getProducts();
+                let fragment = document.createDocumentFragment();
                 
-                products.forEach(function(product) {
-                    var li = document.createElement('li');
+                products.forEach(product => {
+                    let li = document.createElement('li');
                     li.innerText = product.name;
                     li.classList.add('list-group-item');
-                    li.onclick = function() {
-                        store.productDetails.load(product.itemId);
-                    };
+                    li.onclick = () => store.productDetails.load(product.itemId);
 
-                    var price = document.createElement('span');
-                    price.innerText = '$' + product.price;
+                    let price = document.createElement('span');
+                    price.innerText = `$${product.price}`;
                     li.appendChild(price);
     
                     fragment.appendChild(li);

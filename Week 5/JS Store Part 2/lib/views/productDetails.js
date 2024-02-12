@@ -1,9 +1,9 @@
-(function(store){
+(store => {
 
-    var selectedProduct;
+    let selectedProduct;
 
     store.productDetails = {
-        load: function(itemId) {
+        load (itemId) {
             selectedProduct = store.inventory.getProduct(itemId);
             
             document.querySelector('#productDetails_name').innerText = selectedProduct.name;
@@ -12,7 +12,7 @@
 
             store._changeView('productDetails');
         },
-        addToCart: function() {
+        addToCart () {
             store._cartItems.push(selectedProduct);
             store.myCart.load();
         }

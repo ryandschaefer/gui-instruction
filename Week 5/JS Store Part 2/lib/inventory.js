@@ -1,9 +1,11 @@
-(function (store) {
-    function Product(itemId, name, description, price) {
-        this.itemId = itemId;
-        this.name = name;
-        this.description = description;
-        this.price = price;
+(store => {
+    class Product {
+        constructor(itemId, name, description, price){
+            this.itemId = itemId;
+            this.name = name;
+            this.description = description;
+            this.price = price;                
+        }
     }
 
     let products = [
@@ -34,13 +36,11 @@
     ];
 
     store.inventory = {
-        getProducts: function() {
+        getProducts () {
             return products;
         },
-        getProduct: function(itemId) {
-            return products.find(function(product) {
-                return product.itemId === itemId;
-            });
+        getProduct (itemId) {
+            return products.find(x => x.itemId === itemId);
         }
     }
 
