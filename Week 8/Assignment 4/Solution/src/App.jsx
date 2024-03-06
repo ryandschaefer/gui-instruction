@@ -6,13 +6,11 @@ export const App = () => {
   return <>
     <CartContextProvider>
       <BrowserRouter>
-      {/* <div className = "container"> */}
         <Link to = "/">
           <header className = "bg-dark navbar navbar-expand-lg px-4 text-white text-decoration-none fs-4">
             Store
           </header>
         </Link>
-        {/* <div className = "container"> */}
           <Routes>
             {
               routes.map((route, index) => {
@@ -20,7 +18,6 @@ export const App = () => {
               })
             }
           </Routes>
-        {/* </div> */}
       </BrowserRouter>
     </CartContextProvider>
   </>
