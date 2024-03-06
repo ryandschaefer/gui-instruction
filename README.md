@@ -1,5 +1,7 @@
 # Graphical User Interfaces With React
 
+Credit for all instructional materials goes to John Lawrimore.
+
 ## Tentative Schedule
 
 ### Week 1 (January 15)
